@@ -89,7 +89,7 @@
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem -56px);
-    background-image: url("/lovetravel.local/images/header.jpg");
+    background-image: url("../images/header.jpg");
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
