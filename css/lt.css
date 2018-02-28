@@ -134,3 +134,19 @@ header.masthead p {
         font-size: 3.5rem
     }
 }
+
+.footer-social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #343b4c;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition: background-color .2s,fill .2s;
+    fill: #dfe4ec;
+}
