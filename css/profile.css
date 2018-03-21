@@ -6,7 +6,7 @@ body {
 }
 .userBG {
     height: 150px;
-    background-image: url('images/slider2.jpg');
+    background-image: url('../images/slider2.jpg');
     background-size: cover;
 }
 .identityCard {
