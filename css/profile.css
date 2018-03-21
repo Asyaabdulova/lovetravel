@@ -68,3 +68,7 @@ body {
     border-radius: 50%;
     width:20px;
 }
+
+.mainSettingsForm {
+    padding: 15px;
+}

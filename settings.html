@@ -91,24 +91,39 @@
         <!-- START -- center col -->
         <main class="col-lg-6 col-md-6">
 
-            <div class="card">
+            <div class="card mainSettingsForm">
                 <form>
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        <label for="inputName" class="col-sm-4 col-form-label text-right">Имя</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" id="inputName" placeholder="Имя">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
+                        <label for="inputSurname" class="col-sm-4 col-form-label text-right">Фамилия</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" id="inputSurname" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputSurname" class="col-sm-4 col-form-label text-right">Пол</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>женский</option>
+                                <option>мужской</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-4 col-form-label text-right">Password</label>
+                        <div class="col-sm-8">
                             <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                         </div>
                     </div>
                     <fieldset class="form-group">
                         <div class="row">
-                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                            <div class="col-sm-10">
+                            <legend class="col-form-label col-sm-4 pt-0 text-right">Radios</legend>
+                            <div class="col-sm-8">
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                                     <label class="form-check-label" for="gridRadios1">
@@ -131,8 +146,8 @@
                         </div>
                     </fieldset>
                     <div class="form-group row">
-                        <div class="col-sm-2">Checkbox</div>
-                        <div class="col-sm-10">
+                        <div class="col-sm-4 text-right">Checkbox</div>
+                        <div class="col-sm-8">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="gridCheck1">
                                 <label class="form-check-label" for="gridCheck1">
