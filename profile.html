@@ -65,12 +65,17 @@
         .post .content {
             color: #686868;
         }
+
+        .profileMenu {
+            margin-top: 25px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <div class="row">
+            <!-- START -- left col -->
             <aside class="col-lg-3 col-md-3">
 
                 <div class="card identityCard">
@@ -90,7 +95,21 @@
                     </div>
                 </div>
 
+                <div class="list-group profileMenu">
+                    <a href="#" class="list-group-item list-group-item-action">Моя страница</a>
+                    <a href="#" class="list-group-item list-group-item-action justify-content-between d-flex align-items-center">
+                        Сообщения
+                        <span class="badge badge-info">10</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Друзья</a>
+                    <a href="#" class="list-group-item list-group-item-action">Фотографии</a>
+                    <a href="#" class="list-group-item list-group-item-action">Видео</a>
+                </div>
+
             </aside>
+            <!-- END -- left col -->
+
+            <!-- START -- center col -->
             <main class="col-lg-6 col-md-6">
 
                 <div class="card">
@@ -127,9 +146,13 @@
                 </div>
 
             </main>
+            <!-- END -- center col -->
+
+            <!-- START -- right col -->
             <aside class="col-lg-3 col-md-3">
 
             </aside>
+            <!-- END -- right col -->
         </div>
     </div>
 
