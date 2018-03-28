@@ -72,3 +72,9 @@ body {
 .mainSettingsForm {
     padding: 15px;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
