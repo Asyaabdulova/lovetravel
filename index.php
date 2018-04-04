@@ -1,0 +1,277 @@
+<?php
+    $auth = false;
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/lt.css" rel="stylesheet">
+    <style>
+        .img-circle {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">LoveTravel</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Возможности</a>
+                </li>
+                <?php if($auth) { ?>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Мой профиль</a>
+                </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="masthead d-flex">
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-7 text-white">
+                <h1 class="text-uppercase">
+                    <strong>КАЖДОЕ МГНОВЕНИЕ ЖИЗНИ ЭТО ВОЗМОЖНОСТЬ</strong>
+                </h1>
+            </div>
+
+            <?php if (!$auth) : // ($auth == false) ?>
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="registerLogin" class="d-none">Email address</label>
+                                <input type="text" class="form-control" id="registerLogin" placeholder="Login">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail" class="d-none">Email address</label>
+                                <input type="email" class="form-control" id="registerEmail" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPass" class="d-none">Password</label>
+                                <input type="password" class="form-control" id="registerPass" placeholder="Password">
+                            </div>
+                            <button type="button" class="btn btn-primary">Register</button>
+                            or
+                            <button type="button" class="btn btn-primary">Log In</button>
+
+                        </form>
+                        <div class="small">Регистрируясь Вы соглашаетесь с политикой <a href="#">конфиденциальности</a>
+                        </div>
+                        <button style="margin-top: 10px" type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#socialModal">Войти через соцсети
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</header>
+
+<div style="border-bottom: 1px solid #dfe4ec; padding: 50px 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-weight: normal; font-size: 70px; text-align: center ">О нас</h1>
+                <p style="text-align: center; font-size: 20px">многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="border-bottom: 1px solid #dfe4ec; padding: 50px 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-weight: normal; font-size: 70px; text-align: center ">Наши возможности</h1>
+                <p style="text-align: center; font-size: 20px">многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)многа текста про то какие мы суер классные =)</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="border-bottom: 1px solid #dfe4ec; padding: 50px 0">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="font-weight: normal; font-size: 70px; text-align: center ">Регистрация </h1>
+                <p style="text-align: center; font-size: 20px">Не теряй время, регистрируйся прямо сейчас!</p>
+            </div>
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="font-weight: normal; font-size: 70px; text-align: center ">Отзывы счастливых пользователей</h1>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <img src="images/Marina.jpg" alt="Марина" width="170" class="img-thumbnail img-circle"   >
+                <h2>Марина</h2>
+            </div>
+            <p class="text-danger">As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Читать далее &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <img src="images/Oleg.jpg" alt="Олег"  width="170" class="img-thumbnail img-circle" >
+                <h2>Олег</h2>
+            </div>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-primary" href="#" role="button">Читать далее&raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <img src="images/Pavel.jpg" alt="Павел" width="170" class="img-thumbnail img-circle">
+                <h2>Павел</h2>
+            </div>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+            <p><a class="btn btn-primary" href="#" role="button">Читать далее &raquo;</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Вход через социальные сети</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a href="#"><img src="images/facebook-icon.png" width="70" class="img-thumbnail"></a>
+                <a href="#"><img src="images/twiter.jpg" width="70" class="img-thumbnail"></a>
+                <a href="#"><img src="images/odnoklassniki.png" width="70" class="img-thumbnail"></a>
+                <a href="#"><img src="images/Instagram_icon.png" width="70" class="img-thumbnail"></a>
+                <a href="#"><img src="images/vk_bg.png" width="70" class="img-thumbnail"></a>
+                <a href="#"><img src="images/orig.png" width="70" class="img-thumbnail"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer style="padding: 30px 0; background: #433f44; color:#8d96b2">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <a href="#" style="color:#8d96b2">Вход</a>/<a href="#" style="color:#8d96b2">Регистрация</a>
+            </div>
+            <div class="col-6">
+                <div class="footer-social-icons">
+                    <a rel="nofollow" target="_blank" href="https://vk.com/rambler" data-cerber-head="main::footer::smm::vk">
+                        <svg width="17" height="11" viewBox="0 0 17 11" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.317 10.272h1.017s.307-.036.463-.215c.145-.165.14-.475.14-.475s-.02-1.463.613-1.677c.624-.21 1.425 1.4 2.274 2.02.642.467 1.13.347 1.13.347l2.27.002s1.188-.096.624-1.088c-.046-.08-.328-.733-1.688-2.074-1.423-1.403-1.232-1.176.482-3.603 1.044-1.48 1.462-2.38 1.332-2.768-.125-.368-.887-.305-.887-.305h-2.562s-.19-.02-.33.07c-.137.086-.226.313-.226.313s-.405 1.165-.944 2.138c-1.14 2.052-1.594 2.16-1.78 2.033-.433-.296-.325-1.192-.325-1.83 0-1.987.285-2.817-.552-3.032C9.09.058 8.886.01 8.175.002c-.912-.01-1.685.004-2.12.23-.292.152-.517.49-.38.508.17.024.55.11.755.403.262.378.252 1.228.252 1.228s.15 2.343-.35 2.633c-.346.2-.818-.207-1.833-2.07C3.98 1.98 3.586.905 3.586.905S3.51.708 3.377.603a1.036 1.036 0 0 0-.395-.168H.555s-.366.012-.5.18c-.12.15-.01.46-.01.46s1.903 4.76 4.056 7.14c1.976 2.184 4.217 2.057 4.217 2.057z"
+                                  fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://www.facebook.com/newsrambler/"
+                       data-cerber-head="main::footer::smm::fb">
+                        <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.203 8.38h2.35l.352-2.735H5.203V3.892c0-.794.213-1.336 1.348-1.336H8V.103C7.75.068 6.89 0 5.89 0 3.8 0 2.37 1.272 2.37 3.62v2.025H0V8.38h2.37v7.05h2.833V8.38z"
+                                  fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://twitter.com/ramblerru" data-cerber-head="main::footer::smm::tw">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
+                                61224BF5-5E6D-42BF-9A3B-E786241AC041</title>
+                            <path d="M6.418 17c6.5 0 10.055-5.386 10.055-10.056 0-.153-.003-.305-.01-.457a7.19 7.19 0 0 0 1.763-1.83 7.055 7.055 0 0 1-2.03.557 3.547 3.547 0 0 0 1.555-1.955c-.683.405-1.44.7-2.244.858A3.535 3.535 0 0 0 9.484 7.34a10.034 10.034 0 0 1-7.285-3.693 3.532 3.532 0 0 0 1.094 4.718 3.509 3.509 0 0 1-1.6-.442l-.001.045a3.536 3.536 0 0 0 2.835 3.465 3.545 3.545 0 0 1-1.596.06 3.538 3.538 0 0 0 3.302 2.456 7.092 7.092 0 0 1-4.39 1.512A7.12 7.12 0 0 1 1 15.412 10.005 10.005 0 0 0 6.418 17"
+                                  fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://ok.ru/rambler" data-cerber-head="main::footer::smm::ok">
+
+                        <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+                            <g fill-rule="evenodd">
+                                <path d="M5 2.344c.913 0 1.656.743 1.656 1.657 0 .913-.743 1.656-1.656 1.656a1.658 1.658 0 0 1-1.656-1.655c0-.913.744-1.656 1.656-1.656zM5 8c2.206 0 4-1.794 4-4S7.206 0 5 0 1 1.794 1 4s1.794 4 4 4z"></path>
+                                <path d="M6.803 11.397c.907-.2 1.78-.55 2.587-1.045.61-.375.793-1.16.41-1.756a1.323 1.323 0 0 0-1.8-.4 5.777 5.777 0 0 1-6 0 1.323 1.323 0 0 0-1.8.4c-.383.596-.2 1.38.41 1.756.805.493 1.68.844 2.587 1.045l-2.49 2.43a1.25 1.25 0 0 0 0 1.8c.255.248.588.373.922.373.334 0 .668-.124.923-.373L5 13.24l2.448 2.387c.51.497 1.336.497 1.846 0s.51-1.304 0-1.8l-2.49-2.43"></path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://www.instagram.com/news.rambler/"
+                       data-cerber-head="main::footer::smm::ig">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path d="M10 12.598a2.598 2.598 0 1 0 0-5.196 2.598 2.598 0 0 0 0 5.196zm0 1.5a4.098 4.098 0 1 1 0-8.196 4.098 4.098 0 0 1 0 8.196zm4.122-6.951a.994.994 0 1 1 0-1.99.994.994 0 0 1 0 1.99z"></path>
+                            <path d="M3.69 6.297v7.406a2.607 2.607 0 0 0 2.607 2.606h7.406a2.607 2.607 0 0 0 2.606-2.606V6.297a2.607 2.607 0 0 0-2.606-2.606H6.297a2.607 2.607 0 0 0-2.606 2.606zm-1.5 0a4.107 4.107 0 0 1 4.107-4.106h7.406a4.107 4.107 0 0 1 4.106 4.106v7.406a4.107 4.107 0 0 1-4.106 4.106H6.297a4.107 4.107 0 0 1-4.106-4.106V6.297z"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://www.youtube.com/channel/UCjYZSfD0GcZ3BjhqZei6smA"
+                       data-cerber-head="main::footer::smm::yt">
+                        <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.552 7.065v-4.12l3.78 2.068-3.78 2.052zm8.3-4.833s-.136-1.01-.556-1.455c-.532-.583-1.128-.586-1.402-.62C9.936.007 7 .007 7 .007h-.007s-2.937 0-4.895.15c-.274.034-.87.037-1.402.62C.276 1.222.14 2.232.14 2.232S0 3.42 0 4.605v1.112C0 6.903.14 8.09.14 8.09S.276 9.1.696 9.543c.532.584 1.23.566 1.543.627 1.118.114 4.756.148 4.756.148s2.94-.004 4.898-.153c.274-.034.87-.037 1.402-.62.42-.445.557-1.456.557-1.456s.14-1.187.14-2.373V4.605c0-1.186-.14-2.373-.14-2.373z"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://t.me/newsrambler" data-cerber-head="main::footer::smm::tg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M16.728 3.28c-.057-.165-.124-.21-.23-.25-.23-.087-.62.044-.62.044S2.071 8.037 1.282 8.586c-.17.119-.227.187-.255.268-.136.392.288.564.288.564l3.56 1.16s.132.019.18-.01c.809-.512 8.144-5.145 8.568-5.3.067-.02.116.002.103.049-.17.594-6.541 6.257-6.541 6.257s-.024.03-.04.066l-.008-.005-.332 3.53s-.14 1.081.942 0a30.55 30.55 0 0 1 1.87-1.712c1.225.845 2.542 1.78 3.11 2.268.285.246.524.286.72.278.54-.02.69-.613.69-.613S16.655 5.26 16.739 3.903c.008-.133.02-.218.02-.31a1.141 1.141 0 0 0-.03-.313"></path>
+                        </svg>
+                    </a>
+                    <a rel="nofollow" target="_blank" href="https://news.rambler.ru/rss" data-cerber-head="main::footer::smm::rss">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                  d="M10.81 16.044h2.555c-.283-5.616-2.66-8.75-9.081-8.797 0 .946.09 1.891.09 2.837 4.761-.316 6.352 2.648 6.437 5.96zm-4.634-3.69c1.044 0 1.891.826 1.891 1.845 0 1.019-.847 1.845-1.891 1.845-1.045 0-1.892-.826-1.892-1.845 0-1.019.847-1.844 1.892-1.844zm8.891 3.69C15.119 9.52 11.743 5.656 4.189 5.26L4 2.517c8.775.121 14.057 4.96 14 13.527h-2.933z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    !function ($) {
+        "use strict";
+        // Closes responsive menu when a scroll trigger link is clicked
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        var navbarCollapse = function () {
+            let mn = $("#mainNav");
+            if (mn.offset().top > 100) {
+                mn.addClass("navbar-shrink");
+            } else {
+                mn.removeClass("navbar-shrink");
+            }
+        };
+        // Collapse now if page is not at top
+        navbarCollapse();
+        // Collapse the navbar when page is scrolled
+        $(window).scroll(navbarCollapse);
+    }(jQuery);
+</script>
+
+</body>
+</html>
