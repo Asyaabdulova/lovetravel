@@ -41,6 +41,15 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Мой профиль</a>
                 </li>
                 <?php } ?>
+
+
+                <?php if($auth){ ?>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="contact"> Мой профиль</a>
+                    <?php } ?>
+                </li>
+
+
             </ul>
         </div>
     </div>
@@ -124,38 +133,7 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h1 style="font-weight: normal; font-size: 70px; text-align: center ">Отзывы счастливых пользователей</h1>
-        </div>
-        <div class="col-lg-4">
-            <div class="text-center">
-                <img src="images/Marina.jpg" alt="Марина" width="170" class="img-thumbnail img-circle"   >
-                <h2>Марина</h2>
-            </div>
-            <p class="text-danger">As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-primary" href="#" role="button">Читать далее &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-            <div class="text-center">
-                <img src="images/Oleg.jpg" alt="Олег"  width="170" class="img-thumbnail img-circle" >
-                <h2>Олег</h2>
-            </div>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-primary" href="#" role="button">Читать далее&raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-            <div class="text-center">
-                <img src="images/Pavel.jpg" alt="Павел" width="170" class="img-thumbnail img-circle">
-                <h2>Павел</h2>
-            </div>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-            <p><a class="btn btn-primary" href="#" role="button">Читать далее &raquo;</a></p>
-        </div>
-    </div>
-</div>
+<?php include "main_reviews.php"; ?>
 
 <!-- Modal -->
 <div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
