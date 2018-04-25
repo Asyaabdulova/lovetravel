@@ -23,15 +23,6 @@
                         <a class="nav-link js-scroll-trigger" href="#contact">Мой профиль</a>
                     </li>
                 <?php } ?>
-
-
-                <?php if($auth){ ?>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="contact"> Мой профиль</a>
-                    <?php } ?>
-                </li>
-
-
             </ul>
         </div>
     </div>
