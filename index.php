@@ -41,6 +41,15 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Мой профиль</a>
                 </li>
                 <?php } ?>
+
+
+                <?php if($auth){ ?>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="contact"> Мой профиль</a>
+                    <?php } ?>
+                </li>
+
+
             </ul>
         </div>
     </div>
@@ -124,7 +133,8 @@
     </div>
 </div>
 
-<?php include "mianReviews.php"; ?>
+<?php include "main_reviews.php"; ?>
+
 <!-- Modal -->
 <div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
