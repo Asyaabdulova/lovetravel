@@ -18,21 +18,11 @@
 <body>
 
 <?php include "tpls/main/main_header.php"?>
-
 <?php include "tpls/main/main_about.php"  ?>
-
 <?php include "tpls/main/main_capabilities.php" ?>
-
 <?php include "tpls/main/main_orders.php" ?>
-
 <?php include "tpls/main/main_reviews.php" ?>
-
 <?php include "tpls/main/main_footer.php"; ?>
-
-
-
-
-
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
