@@ -51,6 +51,7 @@
                     <div class="card">
                         <div class="card-body">
                             <form>
+
                                 <div class="form-group">
                                     <label for="registerLogin" class="d-none">Email address</label>
                                     <input type="text" class="form-control" id="registerLogin" placeholder="Login">
@@ -59,17 +60,18 @@
                                     <label for="registerEmail" class="d-none">Email address</label>
                                     <input type="email" class="form-control" id="registerEmail" placeholder="Email">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group " style="margin-bottom: 0">
                                     <label for="registerPass" class="d-none">Password</label>
                                     <input type="password" class="form-control" id="registerPass" placeholder="Password">
+                                </div>
+                                <div class="small" style="margin-bottom: 1rem">Регистрируясь Вы соглашаетесь с политикой <a href="#">конфиденциальности</a>
                                 </div>
                                 <button type="button" class="btn btn-primary">Register</button>
                                 or
                                 <button type="button" class="btn btn-primary">Log In</button>
 
                             </form>
-                            <div class="small">Регистрируясь Вы соглашаетесь с политикой <a href="#">конфиденциальности</a>
-                            </div>
+
                             <button style="margin-top: 10px" type="button" class="btn btn-primary" data-toggle="modal"
                                     data-target="#socialModal">Войти через соцсети
                             </button>
