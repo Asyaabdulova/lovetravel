@@ -1,4 +1,5 @@
 <?php
+    // include_once "functions.php";
     $auth = false;
 ?>
 <!DOCTYPE html>
