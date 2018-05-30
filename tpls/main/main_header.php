@@ -59,7 +59,7 @@
                                 </div>
                                 <button type="button" class="btn btn-primary">Register</button>
                                 or
-                                <button type="button" class="btn btn-primary">Log In</button>
+                                <a href="/auth.php" class="btn btn-primary">Log In</a>
 
                             </form>
 
