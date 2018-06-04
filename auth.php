@@ -1,6 +1,17 @@
 <?php
-    $email = "asd@qqq.ua";
-    $password = "123456qwerty";
+    $email = "casw@ssa.ua";
+    $password = "1234qqqq";
+
+    // эмуляция получения спика пользователей из БД
+    function getUserTable() {
+        $userTable = [
+            ["email" => "aas@ssa.ua", "password" => "12345678"],
+            ["email" => "qqq@ssa.ua", "password" => "1234ytre"],
+            ["email" => "casw@ssa.ua", "password" => "1234qqqq"],
+            ["email" => "retro@ssa.ua", "password" => "1234jjjj"]
+        ];
+        return $userTable;
+    }
 
     function emailValid($email) {
         // поиск @ в имейле, возвращает кол-во найденных @
@@ -27,6 +38,16 @@
         $res["email"] = emailValid($email);
         $res["password"] = passwordValid($password);
         return $res["email"] && $res["password"];
+    }
+
+    function authSearchUser($email,$password) {
+        $users = getUserTable();
+        foreach ($users as $user) {
+            if($user["email"] == $email && $user["password"] == $password) {
+                return $user;
+            }
+        }
+        return false;
     }
 ?>
 
@@ -62,6 +83,16 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
+    <?php
+        if(authValidation($email,$password) == true) {
+            if (($u = authSearchUser($email,$password)) != false) {
+                echo "<h3>Пользователь найден!</h3>";
+                var_dump($u);
+            }else {
+                echo "<h3>Пользователь НЕ найден!</h3>";
+            }
+        }else { echo "<h3>Валидация ОШИБОЧНА!</h3>"; }
+    ?>
 
 </div> <!-- /container -->
 
